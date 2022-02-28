@@ -4,6 +4,9 @@
 *.dll
 *.so
 *.dylib
+*.tmp
+*.log
+*.pprof
 
 # Test binary, built with `go test -c`
 *.test
@@ -11,20 +14,38 @@
 
 # Output of the go coverage tool, specifically when used with LiteIDE
 *.out
+*.bak
+bin
+build
+cbuild
 
 # IDE files
 .vscode
-.DS_Store
 .idea
+.glide
+.settings
+workspace.xml
+
+# Mac OS X files
+**/.DS_Store
 
 # Misc
 *.fiber.gz
 *.fasthttp.gz
 *.pprof
 *.workspace
+.buildpath
+.hgignore.swp
+.project
+.orig
+.swp
+composer.lock
+gitpush.sh
+swagger.zip
 
 # Dependencies
 vendor
 vendor/
 /vendor/
 /Godeps/
+go.sum
